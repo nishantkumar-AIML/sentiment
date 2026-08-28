@@ -1,0 +1,47 @@
+{
+  "P0": {
+    "config": "P0",
+    "description": "Raw text + Unigrams (5k)",
+    "accuracy": 0.871,
+    "accuracy_pct": "87.10%",
+    "macro_f1": 0.8142,
+    "weighted_f1": 0.8698,
+    "time_sec": 4.7
+  },
+  "P1": {
+    "config": "P1",
+    "description": "Lowercase + Punctuation Stripping",
+    "accuracy": 0.871,
+    "accuracy_pct": "87.10%",
+    "macro_f1": 0.8142,
+    "weighted_f1": 0.8698,
+    "time_sec": 4.79
+  },
+  "P2": {
+    "config": "P2",
+    "description": "P1 + Blind Stopwords (Stripped Negations)",
+    "accuracy": 0.8895,
+    "accuracy_pct": "88.95%",
+    "macro_f1": 0.8367,
+    "weighted_f1": 0.8886,
+    "time_sec": 3.89
+  },
+  "P3 (Baseline)": {
+    "config": "P3 (Baseline)",
+    "description": "P1 + Negation-Preserved Stopwords",
+    "accuracy": 0.889,
+    "accuracy_pct": "88.90%",
+    "macro_f1": 0.836,
+    "weighted_f1": 0.8882,
+    "time_sec": 3.9
+  },
+  "P4": {
+    "config": "P4",
+    "description": "P3 + Unigram + Bigram (1, 2)",
+    "accuracy": 0.8825,
+    "accuracy_pct": "88.25%",
+    "macro_f1": 0.8285,
+    "weighted_f1": 0.8821,
+    "time_sec": 4.05
+  }
+}

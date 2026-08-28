@@ -1,0 +1,49 @@
+{
+  "classes": [
+    "Sadness",
+    "Joy",
+    "Love",
+    "Anger",
+    "Fear",
+    "Surprise"
+  ],
+  "train_orig_counts": [
+    4666,
+    5362,
+    1304,
+    2159,
+    1937,
+    572
+  ],
+  "train_clean_counts": [
+    4665,
+    5357,
+    1298,
+    2159,
+    1934,
+    571
+  ],
+  "val_counts": [
+    550,
+    704,
+    178,
+    275,
+    212,
+    81
+  ],
+  "test_counts": [
+    581,
+    695,
+    159,
+    275,
+    224,
+    66
+  ],
+  "total_train_orig": 16000,
+  "total_train_clean": 15984,
+  "total_val": 2000,
+  "total_test": 2000,
+  "leakage_val": 5,
+  "leakage_test": 11,
+  "total_leakage": 16
+}

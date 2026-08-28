@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+
+# Root Generated Figures
+/figures/
+!paper/figures/
+!paper/figures/*.pdf
+
+# Matplotlib cache
+.venv/tmp_mpl/
+tmp_mpl/
+
+# LaTeX Auxiliary Build Files
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/missfont.log
+paper/research_paper.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
+missfont.log
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo

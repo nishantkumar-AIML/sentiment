@@ -1,0 +1,26 @@
+{
+  "Baseline (Unweighted)": {
+    "accuracy": 0.875,
+    "accuracy_pct": "87.50%",
+    "surprise_f1": 0.705,
+    "macro_f1": 0.8332
+  },
+  "Class-Weighted Loss": {
+    "accuracy": 0.8815,
+    "accuracy_pct": "88.15%",
+    "surprise_f1": 0.7097,
+    "macro_f1": 0.8452
+  },
+  "Random Oversampling": {
+    "accuracy": 0.8755,
+    "accuracy_pct": "87.55%",
+    "surprise_f1": 0.7044,
+    "macro_f1": 0.8396
+  },
+  "TF-IDF Synthetic Oversampling": {
+    "accuracy": 0.8825,
+    "accuracy_pct": "88.25%",
+    "surprise_f1": 0.7133,
+    "macro_f1": 0.8456
+  }
+}
