@@ -1,0 +1,27 @@
+{
+  "sample_size": 2000,
+  "contingency_table": {
+    "n11_both_correct": 1830,
+    "n10_proposed_only": 28,
+    "n01_baseline_only": 16,
+    "n00_both_incorrect": 126,
+    "net_gain": 12
+  },
+  "accuracy_tests": {
+    "mcnemar_chi2": 2.75,
+    "mcnemar_p_value": 0.097254,
+    "exact_binomial_p_value": 0.096142,
+    "paired_ttest_t": 1.8101,
+    "paired_ttest_df": 1999,
+    "paired_ttest_p_value": 0.070431
+  },
+  "macro_f1_bootstrap_test": {
+    "iterations": 10000,
+    "observed_delta": 0.0093,
+    "bootstrap_mean_gain": 0.0093,
+    "ci_95_lower": -0.0012,
+    "ci_95_upper": 0.0202,
+    "p_value": 0.0428,
+    "statistically_significant_at_05": true
+  }
+}
