@@ -6,3 +6,6 @@ xgboost>=2.0.0
 torch>=2.0.0
 matplotlib>=3.7.0
 scipy>=1.10.0
+transformers>=4.40.0
+accelerate>=0.28.0
+nltk>=3.8.0
