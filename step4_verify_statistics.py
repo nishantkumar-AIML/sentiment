@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Reproducible Statistical Significance & Verification Suite
-===========================================================
+Step 4: Reproducible Statistical Significance & Verification Suite
+=================================================================
 Framework: Adversarial Affective Representation Disentanglement with Adaptive Prototype Margins
 Paper: "Adversarial Affective Representation Disentanglement with Adaptive
         Prototype Margins for Long-Tailed Text Emotion Recognition"

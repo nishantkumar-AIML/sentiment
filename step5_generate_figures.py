@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Generate Vector PDF Figures for Updated IEEE Transactions Manuscript
-====================================================================
+Step 5: Generate Publication-Ready Vector PDF Figures
+=====================================================
 Framework: Adversarial Affective Representation Disentanglement with Adaptive Prototype Margins
 Author: Nishant Kumar
 Target Journal: IEEE Transactions on Affective Computing (TAFFC)

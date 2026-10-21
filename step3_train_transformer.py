@@ -19,7 +19,7 @@ Supported experiments (<exp_name>):
   - Auxiliary_Continuous_VAD: Framework with auxiliary continuous VAD regression (92.65% Acc, 0.8707 Macro-F1)
 
 Usage:
-  python3 run_single_experiment.py <exp_name>
+  python3 step3_train_transformer.py <exp_name>
 """
 
 import sys
@@ -130,7 +130,7 @@ def evaluate_model(model, dataloader, device):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python run_single_experiment.py <exp_name>")
+        print("Usage: python3 step3_train_transformer.py <exp_name>")
         sys.exit(1)
 
     exp_name = sys.argv[1]

@@ -109,23 +109,23 @@ python3 step1_setup_vad_data.py
 # 4. Verify dataset split breakdown and hyperparameter specifications (Reproduces Tables 1 & 2)
 python3 verify_dataset_stats.py
 
-# 5. Run Classical Benchmark Suite (Reproduces Table 4 classical baselines)
-python3 benchmark_classical_updated.py
+# 5. Run Classical Benchmark Suite (Step 2 - Reproduces Table 4 classical baselines)
+python3 step2_benchmark_classical.py
 
 # 6. Run SOTA Transformer & Proposed Disentangled Framework (Step 3)
-python3 run_single_experiment.py ModernBERT_Baseline
-python3 run_single_experiment.py Proposed_Framework_Full
+python3 step3_train_transformer.py ModernBERT_Baseline
+python3 step3_train_transformer.py Proposed_Framework_Full
 
 # Optional: Run individual ablation experiments (Reproduces Table 6)
-# python3 run_single_experiment.py Ablation_No_Ortho
-# python3 run_single_experiment.py Ablation_No_Adv
-# python3 run_single_experiment.py Auxiliary_Continuous_VAD
+# python3 step3_train_transformer.py Ablation_No_Ortho
+# python3 step3_train_transformer.py Ablation_No_Adv
+# python3 step3_train_transformer.py Auxiliary_Continuous_VAD
 
-# 7. Verify Statistical Significance & Instance-Level Predictions
-python3 verify_statistical_significance.py
+# 7. Verify Statistical Significance & Instance-Level Predictions (Step 4)
+python3 step4_verify_statistics.py
 
-# 8. Generate Publication-Ready Vector PDF Figures (Step 4)
-python3 generate_new_paper_figures.py
+# 8. Generate Publication-Ready Vector PDF Figures (Step 5)
+python3 step5_generate_figures.py
 
 # 9. Compile IEEE Transactions LaTeX Manuscript
 cd paper
@@ -162,12 +162,31 @@ sentiment/
 ├── README.md                                              <-- Comprehensive project documentation
 ├── requirements.txt                                       <-- Dependencies (PyTorch, transformers, scikit-learn)
 ├── step1_setup_vad_data.py                                <-- Step 1: Multi-tier audit & VAD setup
+├── step2_benchmark_classical.py                           <-- Step 2: Classical 6-model benchmark suite
+├── step3_train_transformer.py                             <-- Step 3: ModernBERT & proposed framework runner
+├── step4_verify_statistics.py                             <-- Step 4: Reproduces paired bootstrap & McNemar tests
+├── step5_generate_figures.py                              <-- Step 5: Publication vector PDF figure generator
 ├── verify_dataset_stats.py                                <-- Verifies split counts & hyperparameters
-├── benchmark_classical_updated.py                         <-- Step 2: Classical 6-model benchmark suite
-├── run_single_experiment.py                               <-- Step 3: ModernBERT & proposed framework runner
-├── verify_statistical_significance.py                     <-- Step 4: Reproduces paired bootstrap & McNemar tests
-├── generate_new_paper_figures.py                          <-- Step 5: Publication vector PDF figure generator
 ├── models/
+│   ├── __init__.py
+│   └── vad_causal_disentangler.py                         <-- PyTorch modules (GRL, AttentionPooling, Prototype Loss)
+├── dataset/
+│   ├── training.csv                                       <-- Raw training partition
+│   ├── validation.csv                                     <-- Official validation partition
+│   ├── test.csv                                           <-- Official test partition
+│   ├── vad_augmented_splits.json                         <-- Sentence-level continuous VAD coordinates
+│   └── nrc_vad/                                           <-- NRC-VAD Lexicon files
+├── results/
+│   ├── dataset_audit.json                                 <-- Exact sample counts & audit results
+│   ├── class_vad_anchors.json                             <-- 3D VAD centroids per emotion
+│   ├── test_predictions.json                              <-- Exact instance-level test predictions (N=2,000)
+│   ├── statistical_significance.json                      <-- Verified bootstrap and McNemar test report
+│   ├── sota_experiments_results.json                      <-- Transformer benchmark & ablation metrics
+│   └── final_results.json                                 <-- Classical benchmark metrics
+└── paper/
+    ├── research_paper.pdf                                 <-- Master IEEE Transactions PDF (9 pages)
+    ├── research_paper.tex                                 <-- Master IEEE Transactions LaTeX source
+    └── figures/                                           <-- All 6 publication vector PDF figures
 │   ├── __init__.py
 │   └── vad_causal_disentangler.py                         <-- PyTorch modules (GRL, AttentionPooling, Prototype Loss)
 ├── dataset/
