@@ -202,7 +202,7 @@ sentiment/
 ```bibtex
 @article{kumar2026adversarial,
   title={Adversarial Affective Representation Disentanglement with Adaptive Prototype Margins for Long-Tailed Text Emotion Recognition},
-  author={Kumar, Nishant},
+  author={ Nishant kumar},
   journal={IEEE Transactions on Affective Computing (Under Review)},
   year={2026},
   url={https://github.com/nishantkumar-AIML/sentiment}
